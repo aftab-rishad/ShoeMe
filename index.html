@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html id="html" class="scroll-smooth h-full w-full select-none" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ShoeMe - Home</title>
+    <link rel="icon" type="image/png" href="image/tabbar-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
+      integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css link start -->
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- css link end -->
+  </head>
+  <body
+    class="bg-background h-full w-full text-textColor font-sans dark:bg-darkBg dark:text-darkTextColor"
+  >
+    <div
+      id="nav"
+      class="w-full fixed top-0 z-20 flex bg-background dark:bg-darkBg md:bg-transparent md:dark:bg-transparent"
+    >
+      <a id="logo" href="index.html">
+        <img
+          class="inline-block m-3 px-2 w-24 md:w-36 xl:w-40"
+          src="image/Logo.svg"
+        />
+      </a>
+      <i
+        id="manu-open"
+        class="ri-menu-3-line float-right text-2xl mr-5 mt-3 cursor-pointer fixed right-5 sm:text-3xl sm:mr-4 md:text-4xl md:mr-12 md:hidden"
+      ></i>
+      <nav
+        id="nav-link"
+        class="w-60 hidden flex-col backdrop-blur-2xl h-full fixed top-0 right-0 align-middle p-8 text-xl space-y-10 md:flex md:w-full md:relative md:bg-transparent dark:md:bg-transparent md:h-0 md:space-y-0"
+      >
+        <i
+          id="manu-close"
+          class="ri-close-line text-4xl bg-red-600 w-10 h-10 flex justify-center text-white align-top rounded-full cursor-pointer hover:bg-redHover duration-150 md:hidden"
+        ></i>
+        <ul
+          class="space-y-6 font-medium md:flex md:space-y-0 md:fixed md:right-48 md:justify-center md:align-middle md:top-5 md:space-x-8"
+        >
+          <li>
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li><a class="nav-link" href="shop.html">Shop</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li id="cart-open" class="md:fixed md:right-28 md:top-4 relative">
+            <a href="#"><i class="ri-shopping-cart-line text-3xl"></i></a>
+          </li>
+          <li id="moon" class="fixed top-3 right-10 md:top-5">
+            <i class="ri-moon-clear-fill text-2xl cursor-pointer"></i>
+          </li>
+          <li id="sun" class="hidden fixed top-3 right-10 md:top-5">
+            <i class="ri-sun-fill text-2xl cursor-pointer"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div id="main">
+          <section data-speed="0.7" id="section1" class="section z-10">
+            <header
+              id="header"
+              class="h-auto md:h-[28rem] lg:h-[30rem] xl:h-screen overflow-hidden z-10"
+            >
+              <div
+                id="header-content"
+                class="flex flex-col justify-center align-middle text-center mt-16 md:flex-row md:text-start md:mx-6"
+              >
+                <div
+                  id="header-left"
+                  class="space-y-2 md:w-2/3 xl:w-3/6 md:mt-24 md:ml-6 xl:mt-48 xl:mr-10 xl:ml-16 z-10"
+                >
+                  <h1
+                    class="header-left-gsap text-4xl font-semibold md:text-5xl xl:text-6xl xl:font-bold"
+                    id="header-head-line"
+                  >
+                    Step into<span class="text-primary dark:text-darkPimary">
+                      Style!</span
+                    >
+                  </h1>
+                  <p class="header-left-gsap" id="header-para">
+                    Step into style with our exclusive shoe offer!<br />
+                    Elevate your wardrobe with premium comfort<br />
+                    and fashion-forward designs.A limited-time<br />
+                    discount of 20% on your favorite pair.
+                  </p>
+                  <div class="inline-block m-2 hover:btn-hover rounded-3xl">
+                    <a
+                      class="header-left-gsap text-white bg-gradient-to-br from-primary to-orange-600 px-6 py-2 inline-block font-semibold rounded-3xl"
+                      href="#"
+                      >Order Now</a
+                    >
+                  </div>
+                </div>
+                <div
+                  id="header-right"
+                  class="header-right-gsap flex justify-center mt-4 align-middle xl:w-3/5 xl:mt-14 bg-gradient-to-r from-primary to-orange-400 relative left-6 h-full w-full rounded-l-full z-10"
+                >
+                  <img src="image/header.png" alt="shoe" id="header-shoe" />
+                </div>
+              </div>
+            </header>
+          </section>
+          <section
+            data-speed="1.01"
+            id="section2"
+            class="section z-20 bg-background dark:bg-darkBg pt-5"
+          >
+            <h2
+              class="h-auto heading flex justify-center align-middle text-center text-4xl font-semibold my-8 uppercase text-primary dark:text-darkPimary"
+            >
+              New Arrivals
+            </h2>
+            <div
+              id="new-arrivals"
+              class="flex flex-wrap justify-center align-middle gap-10"
+            >
+              <div
+                id="new-arrival1"
+                class="new-arrival bg-[url('/image/Nike-Air-Force-1.png')] bg-cover my-10 text-white rounded-xl min-w-72 w-80 h-[70vh] z-20"
+              >
+                <div
+                  id="new-arr1-content"
+                  class="new-arr-content bg-gradient-to-t from-black to-transparent h-full flex flex-col justify-end align-middle text-center space-y-5 rounded-xl z-20"
+                >
+                  <h1 class="uppercase font-black text-3xl">
+                    Nike Air Force 1
+                  </h1>
+                  <p class="mx-2">
+                    <span class="font-bold">Elevate your style with</span>
+                    <br />
+                    Nike Air Force 1, an iconic sneaker blending timeless design
+                    and modern comfort. Walk in confidence, stand out
+                    effortlessly.
+                  </p>
+                  <a
+                    class="border-4 border-primary px-6 py-2 font-semibold ml-[25%] rounded-full w-[50%] hover:new-arr-hover"
+                    href="#"
+                    >Explore Now</a
+                  ><br />
+                </div>
+              </div>
+              <div
+                id="new-arrival2"
+                class="new-arrival bg-[url('/image/Puma-slipstream.png')] bg-cover my-10 text-white rounded-xl min-w-72 w-80 h-[70vh] z-20"
+              >
+                <div
+                  id="new-arr2-content"
+                  class="new-arr-content bg-gradient-to-t from-black to-transparent h-full flex flex-col justify-end align-middle text-center space-y-5 rounded-xl z-20"
+                >
+                  <h1 class="uppercase font-bold text-3xl">Puma Slipstream</h1>
+                  <p class="mx-2">
+                    <span class="font-bold"
+                      >Step into sleek urban style with</span
+                    >
+                    <br />
+                    Puma Slipstream. A fusion of comfort and edge, these
+                    sneakers redefine street fashion, ensuring you make a
+                    statement with every stride.
+                  </p>
+                  <a
+                    class="border-4 border-primary px-6 py-2 font-semibold ml-[25%] rounded-full w-[50%] hover:new-arr-hover"
+                    href="#"
+                    >Explore Now</a
+                  ><br />
+                </div>
+              </div>
+              <div
+                id="new-arrival3"
+                class="new-arrival bg-[url('/image/Adidas-Centennial-85-Lo.png')] bg-cover my-10 text-white rounded-xl min-w-72 w-80 h-[70vh] z-20"
+              >
+                <div
+                  id="new-arr3-content"
+                  class="new-arr-content bg-gradient-to-t from-black to-transparent h-full flex flex-col justify-end align-middle text-center space-y-5 rounded-xl z-20"
+                >
+                  <h1 class="uppercase font-bold text-2xl">
+                    Adidas Centennial 85
+                  </h1>
+                  <p class="mx-2">
+                    <span class="font-bold">Adidas Centennial 85</span> <br />
+                    a tribute to heritage and innovation. Timeless design meets
+                    modern comfort, creating sneakers that celebrate 35 years of
+                    iconic style and unparalleled performance.
+                  </p>
+                  <a
+                    class="border-4 border-primary px-6 py-2 font-semibold ml-[25%] rounded-full w-[50%] hover:new-arr-hover"
+                    href="#"
+                    >Explore Now</a
+                  ><br />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="section3" class="section z-30">
+            <h2
+              class="heading flex justify-center align-middle text-center text-4xl font-semibold my-8 uppercase text-primary dark:text-darkPimary"
+            >
+              Trending Shoes
+            </h2>
+            <div
+              id="home-sec-product"
+              class="flex flex-wrap justify-center align-middle gap-10"
+            ></div>
+          </section>
+          <section data-speed="1.5" id="section4" class="section z-40">
+            <h2
+              class="heading flex justify-center align-middle text-center text-4xl font-semibold my-16 uppercase text-primary dark:text-darkPimary"
+            >
+              Offers
+            </h2>
+            <div
+              id="offers"
+              class="w-[95%] flex bg-gradient-to-r from-darkAccent to-accent justify-center align-middle ml-2 p-2 rounded-lg dark:text-white sm:ml-4 lg:w-[90%] lg:ml-12 lg:rounded-2xl"
+            >
+              <div
+                id="offers-left "
+                class="w-[55%] float-left mt-[5%] space-y-2 md:ml-[5%] lg:w-[50%] lg:space-y-4 lg:mt-[8%]"
+              >
+                <h2 class="font-medium sm:text-4xl lg:text-5xl">
+                  <span
+                    class="bg-textColor text-darkTextColor rounded-s-md px-2 py-1"
+                  >
+                    UP TO</span
+                  ><span
+                    class="font-medium bg-primary text-darkTextColor py-1 pr-1 rounded-e-md dark:bg-darkPimary"
+                    >75% OFF</span
+                  >
+                </h2>
+                <p class="text-xs sm:text-base">
+                  A limited-time discount of 75% on your favorite pair.
+                </p>
+                <div class="inline-block hover:btn-hover rounded-3xl">
+                  <a
+                    class="text-sm text-white bg-gradient-to-br from-primary to-orange-600 px-6 py-2 inline-block font-semibold rounded-3xl sm:text-base sm:font-semibold"
+                    href="#"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+              <div
+                id="offers-right"
+                class="w-[35%] float-right mt-5 md:ml-[15%]"
+              >
+                <img
+                  src="image/offer.png"
+                  alt="offer image"
+                  class="w-full sm:w-[75%] bg-primary p-2 rounded-full dark:bg-darkPimary"
+                />
+              </div>
+            </div>
+          </section>
+          <section id="section5" class="section z-50">
+            <h2
+              class="heading flex justify-center align-middle text-center text-4xl font-semibold mt-24 uppercase text-primary dark:text-darkPimary"
+            >
+              Blog
+            </h2>
+            <div
+              class="blog-row flex flex-wrap justify-center align-middle gap-10"
+            >
+              <div class="card bg-white dark:bg-black rounded-br-[2.5rem]">
+                <img src="image/blog-1.png" class="w-72 h-44 object-cover" />
+                <div class="blog-content bg-white dark:bg-black">
+                  <h2 class="m-4 font-medium">
+                    Choosing the Right Shoes for Every Occasion
+                  </h2>
+                  <p class="m-4 text-xs">
+                    Finding the perfect pair of shoes isn't just about
+                    completing an outfit; it's about making a statement and
+                    ensuring comfort for the occasion...
+                  </p>
+                  <a
+                    href="#"
+                    class="float-right mt-6 px-4 py-2 bg-primary rounded-tl-full rounded-br-full text-white font-medium dark:bg-darkPimary"
+                    >READ MORE</a
+                  >
+                </div>
+              </div>
+              <div class="card bg-white dark:bg-black rounded-br-[2.5rem]">
+                <img src="image/blog-2.png" class="w-72 h-44 object-cover" />
+                <div class="blog-content bg-white dark:bg-black">
+                  <h2 class="m-4 font-medium">
+                    Behind the Scenes. The Art and Craftsmanship of Handmade
+                    Shoes
+                  </h2>
+                  <p class="m-4 text-xs">
+                    In a world driven by mass production and fast fashion, the
+                    art of handmade shoes stands as a testament to
+                    craftsmanship, tradition, and attention to detail...
+                  </p>
+                  <a
+                    href="#"
+                    class="row4 float-right px-4 py-2 bg-primary rounded-tl-full rounded-br-full text-white font-medium dark:bg-darkPimary"
+                    >READ MORE</a
+                  >
+                </div>
+              </div>
+              <div class="card bg-white dark:bg-black rounded-br-[2.5rem]">
+                <img src="image/blog-3.png" class="w-72 h-44 object-cover" />
+                <div class="blog-content bg-white dark:bg-black">
+                  <h2 class="m-4 font-medium">
+                    The Psychology of Shoe Shopping. Why We Love Buying Shoes
+                  </h2>
+                  <p class="m-4 text-xs">
+                    In the world of retail therapy, there's one particular
+                    indulgence that stands out the love for buying shoes...
+                  </p>
+                  <a
+                    href="#"
+                    class="float-right mt-10 px-4 py-2 bg-primary rounded-tl-full rounded-br-full text-white font-medium dark:bg-darkPimary"
+                    >READ MORE</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="section6" class="section z-[60]">
+            <div
+              id="logos"
+              class="flex justify-center align-middle mt-24 space-x-8 bg-stone-400 w-full md:space-x-12 lg:space-x-14 xl:space-x-16"
+            >
+              <img src="image/nike.svg" alt="Nike Logo" width="8%" />
+              <img src="image/adidas.svg" alt="Adidas Logo" width="8%" />
+              <img src="image/puma.svg" alt="Puma Logo" width="8%" />
+              <img src="image/vans.svg" alt="Vans Logo" width="8%" />
+              <img src="image/converse.svg" alt="Converse Logo" width="8%" />
+              <img
+                src="image/new-balance.svg"
+                alt="New Blance Logo"
+                width="8%"
+              />
+            </div>
+          </section>
+          <footer
+            id="footer"
+            class="flex flex-col justify-center align-middle text-center bg-neutral-900 dark:bg-neutral-300 text-darkTextColor dark:text-textColor space-y-6 w-full text-sm overflow-hidden z-[70]"
+          >
+            <div
+              id="footer-logo"
+              class="flex justify-center align-middle pt-10"
+            >
+              <a href="index.html"
+                ><img src="image/Logo.svg" alt="Logo" width="100%"
+              /></a>
+            </div>
+            <div id="footer-content-1" class="space-x-8 font-medium uppercase">
+              <a href="#">Brands</a>
+              <a href="#">Media</a>
+              <a href="#">Blog</a>
+            </div>
+            <div
+              class="h-[0.15rem] w-[50%] bg-darkTextColor dark:bg-textColor ml-[25%] rounded-2xl opacity-25"
+            ></div>
+            <div id="footer-content-2" class="space-x-8 font-medium uppercase">
+              <a href="#">Our Mission</a>
+              <a href="#">Help Center</a>
+              <a href="#">Community Guidelines</a>
+              <a href="#">Faq</a>
+              <a href="#">About</a>
+              <a href="#">Contact Us</a>
+            </div>
+            <div
+              id="footer-icon"
+              class="space-x-10 font-medium uppercase text-3xl"
+            >
+              <a href="#"
+                ><i
+                  class="ri-facebook-circle-fill bg-neutral-700 dark:bg-neutral-50 p-2 rounded-full"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="ri-linkedin-fill bg-neutral-700 dark:bg-neutral-50 p-2 rounded-full"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="ri-instagram-line bg-neutral-700 dark:bg-neutral-50 p-2 rounded-full"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="ri-twitter-x-fill bg-neutral-700 dark:bg-neutral-50 p-2 rounded-full"
+                ></i
+              ></a>
+            </div>
+            <div id="footer-copyright" class="pt-10 pb-6 opacity-50">
+              <p>Copyright ©ShoeMe 2024. All Rights Reserved</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript link start -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+
+    <!-- JavaScript link end -->
+  </body>
+</html>

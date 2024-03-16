@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html id="html" class="select-none scroll-smooth h-full w-full" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShoeMe - About Us</title>
+    <link rel="icon" type="image/png" href="image/tabbar-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
+      integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css link start -->
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- css link end -->
+  </head>
+  <body
+    class="bg-background text-textColor font-sans dark:bg-darkBg dark:text-darkTextColor"
+  >
+    <div
+      id="nav"
+      class="w-full fixed top-0 z-20 flex bg-background dark:bg-darkBg md:bg-transparent md:dark:bg-transparent"
+    >
+      <a id="logo" href="index.html">
+        <img
+          class="inline-block m-3 px-2 w-24 md:w-36 xl:w-40"
+          src="image/Logo.svg"
+        />
+      </a>
+      <i
+        id="manu-open"
+        class="ri-menu-3-line float-right text-2xl mr-5 mt-3 cursor-pointer fixed right-5 sm:text-3xl sm:mr-4 md:text-4xl md:mr-12 md:hidden"
+      ></i>
+      <nav
+        id="nav-link"
+        class="w-60 hidden flex-col backdrop-blur-2xl h-full fixed top-0 right-0 align-middle p-8 text-xl space-y-10 md:flex md:w-full md:relative md:bg-transparent dark:md:bg-transparent md:h-0 md:space-y-0"
+      >
+        <i
+          id="manu-close"
+          class="ri-close-line text-4xl bg-red-600 w-10 h-10 flex justify-center text-white align-top rounded-full cursor-pointer hover:bg-redHover duration-150 md:hidden"
+        ></i>
+        <ul
+          class="space-y-6 font-medium md:flex md:space-y-0 md:fixed md:right-48 md:justify-center md:align-middle md:top-5 md:space-x-8"
+        >
+          <li>
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li><a class="nav-link" href="shop.html">Shop</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="md:fixed md:right-28 md:top-4">
+            <a href="#"><i class="ri-shopping-cart-line text-3xl"></i></a>
+          </li>
+          <li id="moon" class="fixed top-3 right-10 md:top-5">
+            <i class="ri-moon-clear-fill text-2xl cursor-pointer"></i>
+          </li>
+          <li id="sun" class="hidden fixed top-3 right-10 md:top-5">
+            <i class="ri-sun-fill text-2xl cursor-pointer"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div id="main">
+          <header>
+            <div
+              id="about-banner"
+              class="bg-[url('/image/about-banner.png')] bg-cover w-screen h-[40vh] mt-16 flex justify-center align-middle text-center text-white"
+            >
+              <div
+                class="h-full w-full bg-black bg-opacity-50 text-8xl font-bold"
+              >
+                <h2 class="mt-[10vh]">#About Us</h2>
+              </div>
+            </div>
+          </header>
+          <section id="main-section" class="section space-y-40">
+            <div
+              class="about-con flex justify-center align-middle text-center flex-wrap space-x-5 space-y-5 mt-10"
+            >
+              <div class="about-img w-[35rem]">
+                <img
+                  src="image/about-1.1.png"
+                  class="w-[50rem] h-[25rem] object-cover rounded-xl"
+                />
+              </div>
+              <div class="about-contents w-[35rem] space-y-10 mt-3">
+                <h2 class="text-2xl font-bold text-primary dark:bg-darkPimary">
+                  How did our shoe store begin?
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                  voluptatum ut, nisi eum ipsa temporibus libero nemo ex, amet
+                  maxime dolor, est earum ad non animi molestiae laboriosam
+                  deleniti quaerat! Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Deserunt iure vel sed tempora maiores sequi
+                  cumque doloremque est labore amet voluptate recusandae
+                  quibusdam consequatur, voluptas necessitatibus omnis quam
+                  eaque corrupti!
+                  <br />
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti atque sequi nihil ab nemo expedita. Repellat, culpa!
+                  Ullam sed deserunt obcaecati sint facilis praesentium officiis
+                  et hic, repudiandae rerum sit. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div
+              class="about-con flex justify-center align-middle text-center flex-wrap space-x-5 space-y-5 m-10"
+            >
+              <div class="about-img w-[35rem]">
+                <img
+                  src="image/about-1.2.png"
+                  class="w-[50rem] h-[25rem] object-cover rounded-xl"
+                />
+              </div>
+              <div class="about-contents w-[35rem] space-y-10 mt-3">
+                <h2 class="text-2xl font-bold text-primary dark:bg-darkPimary">
+                  What inspired me to create it?
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                  voluptatum ut, nisi eum ipsa temporibus libero nemo ex, amet
+                  maxime dolor, est earum ad non animi molestiae laboriosam
+                  deleniti quaerat! Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Deserunt iure vel sed tempora maiores sequi
+                  cumque doloremque est labore amet voluptate recusandae
+                  quibusdam consequatur, voluptas necessitatibus omnis quam
+                  eaque corrupti!
+                  <br />
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti atque sequi nihil ab nemo expedita. Repellat, culpa!
+                  Ullam sed deserunt obcaecati sint facilis praesentium officiis
+                  et hic, repudiandae rerum sit. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="section-brand" class="section">
+            <div
+              id="logos"
+              class="flex justify-center align-middle mt-24 space-x-8 bg-stone-400 w-full md:space-x-12 lg:space-x-14 xl:space-x-16"
+            >
+              <img src="image/nike.svg" alt="Nike Logo" width="8%" />
+              <img src="image/adidas.svg" alt="Adidas Logo" width="8%" />
+              <img src="image/puma.svg" alt="Puma Logo" width="8%" />
+              <img src="image/vans.svg" alt="Vans Logo" width="8%" />
+              <img src="image/converse.svg" alt="Converse Logo" width="8%" />
+              <img
+                src="image/new-balance.svg"
+                alt="New Blance Logo"
+                width="8%"
+              />
+            </div>
+          </section>
+          <footer
+            id="footer"
+            class="flex flex-col justify-center align-middle text-center bg-neutral-900 dark:bg-neutral-300 text-darkTextColor dark:text-textColor space-y-6 w-full text-sm overflow-hidden"
+          >
+            <div
+              id="footer-logo"
+              class="flex justify-center align-middle pt-10"
+            >
+              <a href="index.html"
+                ><img src="image/Logo.svg" alt="Logo" width="100%"
+              /></a>
+            </div>
+            <div id="footer-content-1" class="space-x-8 font-medium uppercase">
+              <a href="#">Brands</a>
+              <a href="#">Media</a>
+              <a href="#">Blog</a>
+            </div>
+            <div
+              class="h-[0.15rem] w-[50%] bg-darkTextColor dark:bg-textColor ml-[25%] rounded-2xl opacity-25"
+            ></div>
+            <div id="footer-content-2" class="space-x-8 font-medium uppercase">
+              <a href="#">Our Mission</a>
+              <a href="#">Help Center</a>
+              <a href="#">Community Guidelines</a>
+              <a href="#">Faq</a>
+              <a href="#">About</a>
+              <a href="#">Contact Us</a>
+            </div>
+            <div
+              id="footer-icon"
+              class="space-x-10 font-medium uppercase text-3xl"
+            >
+              <a href="#"
+                ><i
+                  class="ri-facebook-circle-fill bg-neutral-700 dark:bg-neutral-50 p-2 rounded-full"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="ri-linkedin-fill bg-neutral-700 dark:bg-neutral-50 p-2 rounded-full"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="ri-instagram-line bg-neutral-700 dark:bg-neutral-50 p-2 rounded-full"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="ri-twitter-x-fill bg-neutral-700 dark:bg-neutral-50 p-2 rounded-full"
+                ></i
+              ></a>
+            </div>
+            <div id="footer-copyright" class="pt-10 pb-6 opacity-50">
+              <p>Copyright ©ShoeMe 2024. All Rights Reserved</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript link start -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="script.js"></script>
+    <script>
+      function gsapAnimation() {
+        gsap.from("#about-banner", {
+          height: "110vh",
+          duration: 2,
+        });
+      }
+      gsapAnimation();
+    </script>
+    <!-- JavaScript link end -->
+  </body>
+</html>
