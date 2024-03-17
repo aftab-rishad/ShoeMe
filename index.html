@@ -22,7 +22,7 @@
   >
     <div
       id="nav"
-      class="w-full fixed top-0 z-20 flex bg-background dark:bg-darkBg md:bg-transparent md:dark:bg-transparent"
+      class="w-full fixed top-0 z-50 flex bg-background dark:bg-darkBg md:bg-transparent md:dark:bg-transparent md:backdrop-blur-2xl"
     >
       <a id="logo" href="index.html">
         <img
@@ -66,7 +66,7 @@
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <div id="main">
-          <section data-speed="0.7" id="section1" class="section z-10">
+          <section id="section1" class="section z-10">
             <header
               id="header"
               class="h-auto md:h-[28rem] lg:h-[30rem] xl:h-screen overflow-hidden z-10"
@@ -111,7 +111,6 @@
             </header>
           </section>
           <section
-            data-speed="1.01"
             id="section2"
             class="section z-20 bg-background dark:bg-darkBg pt-5"
           >
@@ -211,7 +210,7 @@
               class="flex flex-wrap justify-center align-middle gap-10"
             ></div>
           </section>
-          <section data-speed="1.5" id="section4" class="section z-40">
+          <section id="section4" class="section z-40">
             <h2
               class="heading flex justify-center align-middle text-center text-4xl font-semibold my-16 uppercase text-primary dark:text-darkPimary"
             >
@@ -408,7 +407,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
       integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
@@ -417,7 +415,6 @@
     ></script>
     <script src="index.js"></script>
     <script src="script.js"></script>
-
     <!-- JavaScript link end -->
   </body>
 </html>

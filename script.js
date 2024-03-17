@@ -28,15 +28,76 @@ function theme() {
     sun.classList.add("hidden");
   });
 }
-function smoothScroll() {
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-  ScrollTrigger.normalizeScroll(true);
-
-  let smoother = ScrollSmoother.create({
-    smooth: 2,
-    effects: true,
-    normalizeScroll: true,
+function gsapAnimation() {
+  let tl = gsap.timeline();
+  gsap.from(".header-left-gsap", {
+    x: -700,
+    delay: 0.2,
+    duration: 1.5,
+    stagger: 0.2,
+  });
+  gsap.from(".header-right-gsap", {
+    x: 700,
+    delay: 0.2,
+    duration: 1.5,
+    stagger: 0.2,
+  });
+  tl.from("#header-shoe", {
+    y: 25,
+    duration: 1.5,
+    yoyo: true,
+    repeat: -1,
+  });
+  gsap.from(".blog-row .card", {
+    y: -50,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".blog-row .card",
+      scroller: "body",
+      // markers: true,
+      start: "top 55%",
+      end: "top 0%",
+      scrub: 2,
+    },
+  });
+  gsap.from(".new-arr-content", {
+    opacity: 0,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: "#new-arrivals",
+      scroller: "body",
+      // markers: true,
+      start: "top 50%",
+      end: "top 0%",
+      scrub: 2,
+    },
+  });
+  gsap.from("#new-arrival1", {
+    y: 120,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: "#new-arrivals",
+      scroller: "body",
+      // markers: true,
+      start: "top 55%",
+      end: "top 20%",
+      scrub: 2,
+    },
+  });
+  gsap.from("#new-arrival3", {
+    y: -120,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: "#new-arrivals",
+      scroller: "body",
+      // markers: true,
+      start: "top 55%",
+      end: "top 20%",
+      scrub: 2,
+    },
   });
 }
 function fixedNavbar() {
@@ -70,7 +131,7 @@ function manu() {
 
 //Function Call - Start.
 theme();
-smoothScroll();
+gsapAnimation();
 fixedNavbar();
 manu();
 //Function Call - End.

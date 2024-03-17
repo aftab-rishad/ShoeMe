@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <!-- css link start -->
     <link rel="stylesheet" href="src/style.css" />
     <!-- css link end -->
@@ -21,7 +25,7 @@
   >
     <div
       id="nav"
-      class="w-full fixed top-0 z-20 flex bg-background dark:bg-darkBg md:bg-transparent md:dark:bg-transparent"
+      class="w-full fixed top-0 z-20 flex bg-background dark:bg-darkBg md:bg-transparent md:dark:bg-transparent md:backdrop-blur-2xl"
     >
       <a id="logo" href="index.html">
         <img
@@ -211,24 +215,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
       integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
     <script src="script.js"></script>
-    <script>
-      function gsapAnimation() {
-        gsap.from("#contact-banner", {
-          height: "110vh",
-          duration: 2,
-        });
-      }
-      gsapAnimation();
-    </script>
+
     <!-- JavaScript link end -->
   </body>
 </html>
