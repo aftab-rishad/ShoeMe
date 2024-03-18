@@ -1510,11 +1510,6 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
-.text-red-700 {
-  --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity));
-}
-
 .text-textColor {
   --tw-text-opacity: 1;
   color: rgb(23 8 5 / var(--tw-text-opacity));
@@ -1564,6 +1559,24 @@ video {
 
 .duration-150 {
   transition-duration: 150ms;
+}
+
+@variants hover {
+  .btn-hover {
+    transition: All 0.5s;
+    transform: scale(1.05);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+
+  .new-arr-hover {
+    background: rgb(204, 67, 46);
+    background: linear-gradient(
+      90deg,
+      rgba(204, 67, 46, 1) 0%,
+      rgba(251, 146, 60, 1) 100%
+    );
+    transition: All 0.5s;
+  }
 }
 
 .hover\:bg-redHover:hover {
