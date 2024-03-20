@@ -861,10 +861,6 @@ video {
   height: 70vh;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
-}
-
 .h-auto {
   height: auto;
 }
@@ -879,6 +875,10 @@ video {
 
 .min-h-\[10rem\] {
   min-height: 10rem;
+}
+
+.min-h-\[80vh\] {
+  min-height: 80vh;
 }
 
 .w-10 {
@@ -909,8 +909,8 @@ video {
   width: 20rem;
 }
 
-.w-\[25rem\] {
-  width: 25rem;
+.w-\[22rem\] {
+  width: 22rem;
 }
 
 .w-\[32rem\] {
@@ -947,6 +947,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
 }
 
 .min-w-14 {
