@@ -909,8 +909,8 @@ video {
   width: 20rem;
 }
 
-.w-\[22rem\] {
-  width: 22rem;
+.w-\[20rem\] {
+  width: 20rem;
 }
 
 .w-\[32rem\] {
@@ -947,10 +947,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[20rem\] {
-  width: 20rem;
 }
 
 .min-w-14 {
@@ -1077,10 +1073,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.scroll-smooth {
-  scroll-behavior: smooth;
 }
 
 .rounded-2xl {
@@ -1563,24 +1555,6 @@ video {
 
 .duration-150 {
   transition-duration: 150ms;
-}
-
-@variants hover {
-  .btn-hover {
-    transition: All 0.5s;
-    transform: scale(1.05);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  }
-
-  .new-arr-hover {
-    background: rgb(204, 67, 46);
-    background: linear-gradient(
-      90deg,
-      rgba(204, 67, 46, 1) 0%,
-      rgba(251, 146, 60, 1) 100%
-    );
-    transition: All 0.5s;
-  }
 }
 
 .hover\:bg-redHover:hover {

@@ -28,7 +28,18 @@ function theme() {
     sun.classList.add("hidden");
   });
 }
+function smoothScroll() {
+  const lenis = new Lenis({
+    lerp: 0.05,
+  });
 
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+}
 function gsapAnimation() {
   let tl = gsap.timeline();
   gsap.from(".header-left-gsap", {
@@ -48,6 +59,56 @@ function gsapAnimation() {
     duration: 1.5,
     yoyo: true,
     repeat: -1,
+  });
+  gsap.from(".blog-row .card", {
+    y: -50,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".blog-row .card",
+      scroller: "body",
+      // markers: true,
+      start: "top 55%",
+      end: "top 0%",
+      scrub: 2,
+    },
+  });
+  gsap.from(".new-arr-content", {
+    opacity: 0,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: "#new-arrivals",
+      scroller: "body",
+      // markers: true,
+      start: "top 50%",
+      end: "top 0%",
+      scrub: 2,
+    },
+  });
+  gsap.from("#new-arrival1", {
+    y: 120,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: "#new-arrivals",
+      scroller: "body",
+      // markers: true,
+      start: "top 55%",
+      end: "top 10%",
+      scrub: 2,
+    },
+  });
+  gsap.from("#new-arrival3", {
+    y: -120,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: "#new-arrivals",
+      scroller: "body",
+      // markers: true,
+      start: "top 55%",
+      end: "top 10%",
+      scrub: 2,
+    },
   });
 }
 function fixedNavbar() {
@@ -81,6 +142,7 @@ function manu() {
 
 //Function Call - Start.
 theme();
+smoothScroll();
 gsapAnimation();
 fixedNavbar();
 manu();
