@@ -26,6 +26,13 @@ Check out the live version of the site here: [ShoeMe](https://shoe-me.netlify.ap
 - [Tailwind](https://tailwindcss.com/) CSS frameworks
 - [Netlify](https://www.netlify.com/) for deployment
 
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- [Git](https://git-scm.com/)
+
 ## Installation
 
 To set up the project locally, follow these steps:
